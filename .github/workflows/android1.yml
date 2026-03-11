@@ -1,12 +1,7 @@
 name: Android CI
 
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master"]
-
 env:
+
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  # Force all actions to run on Node.js 24
 
 jobs:
@@ -16,4 +11,3 @@ jobs:
       - uses: actions/checkout@v4  # Old version but runs on Node.js 24
       - name: Build
         run: npm run build
-        
