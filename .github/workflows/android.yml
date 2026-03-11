@@ -16,10 +16,13 @@ jobs:
     - name: set up JDK 17
       uses: actions/setup-java@v4
       with:
+      node-version: '24'
         java-version: '17'
         distribution: 'temurin'
         cache: gradle
-        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true 
+     - uses: actions/cache@v4
+     - uses: actions/upload-artifact@v4
+      -uses: FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
