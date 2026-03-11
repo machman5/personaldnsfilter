@@ -64,7 +64,7 @@ public class DNSFilterTileService extends TileService {
                 if (Build.VERSION.SDK_INT < 34) {
                     Intent startIntent = new Intent(this, DNSProxyActivity.class);
                     startIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    startActivityAndCollapse(PendingIntent);
+                    startActivityAndCollapse(pendingIntent);
                 } else {
                     Intent startIntent = new Intent(this, DNSProxyActivity.class);
                     startIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
