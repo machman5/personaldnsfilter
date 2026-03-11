@@ -72,7 +72,7 @@ public class DNSFilterTileService extends TileService {
                             PendingIntent.getActivity(
                                     this,
                                     0,
-                                    startIntent,
+                                    Intent,
                                     PendingIntent.FLAG_IMMUTABLE
                             )
                     );
