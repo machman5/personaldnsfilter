@@ -5,7 +5,7 @@ android {
 
     defaultConfig {
         applicationId "dnsfilter.android"
-        minSdkVersion 29
+        minSdkVersion 24
         //noinspection EditedTargetSdkVersion
         targetSdkVersion 36
     }
@@ -16,7 +16,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')
         }
     }
@@ -27,6 +27,7 @@ android {
 dependencies {
     testImplementation 'junit:junit:4.13.2'
 }
+
 
 
 
