@@ -71,8 +71,8 @@ public class DNSFilterTileService extends TileService {
                     startActivityAndCollapse(
                             PendingIntent.getActivity(
                                     this,
-                                    0,I
-                                    StartIntent,
+                                    0,
+                                    startIntent,
                                     PendingIntent.FLAG_IMMUTABLE
                             )
                     );
