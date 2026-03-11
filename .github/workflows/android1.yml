@@ -6,7 +6,11 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
-      - uses: actions/checkout@v3  # Old version but runs on Node.js 24
+      - uses: actions/checkout@v4
+    steps:
+      - uses: actions/checkout@v4  # Old version but runs on Node.js 24
       - name: Build
         run: npm run build
